@@ -8,7 +8,9 @@ const ship_data = {
   //   skin_id: 9600020,
   //   english_name: 'MOT São Martinho',
   //   star: 6,
+  //star: current number of stars UR = 6, SR = 6 E = 5, R = 5, C = 4
   //   rarity: 5, 
+  //Rarity: Rarity Rating: UR = 6, SR = 5/4 (usually old = 4, new = 5), E =  Rare = 3, Common = 2
   //   retro: 0,
   //   uni_id: '9600020',
   //   painting: '9600020',
@@ -35,6 +37,14 @@ const ship_data = {
 // retrofit -> flat upgrade from retrofit tree
 // https://raw.githubusercontent.com/AzurLaneTools/AzurLaneData/refs/heads/main/EN/sharecfgdata/ship_data_statistics.json
 // use the array index 5 for reload stats
+
+
+// Usually:
+
+// ID range	Meaning
+// 1xxxx	Normal playable ships
+// 9xxxxx	NPC/event/special entities
+// 90xxxx	Special variants
  
   10800090: {
     nationality: 108,
@@ -23306,5 +23316,29 @@ const ship_data = {
     equip_5: [10, 14],
     eq_p: [0.84999999999999998, 1.6000000000000001, 0.80000000000000004],
     reload: [82.0, 574.0, 0.0, 62.0, 0.0]
-  }
+  },
+  404064: {
+    nationality: 4,
+    type: 4,
+    base_list: [1, 3, 1],
+    id: 404060,
+    skin_id: 404060,
+    english_name: 'KMS Alvitr',
+    star: 6,
+    rarity: 5,
+    retro: 0,
+    uni_id: '404062',
+    painting: '404062',
+    jp_name: 'アルヴィト',
+    en_name: 'Alvitr',
+    cn_name: '亚尔薇特 ',
+    tw_name: 'Alvirt',
+    equip_1: [4],
+    equip_2: [1, 2],
+    equip_3: [6, 21],
+    equip_4: [10],
+    equip_5: [10],
+    eq_p: [1.4, 2.0, 1.0],
+    reload: [61.0, 426.0, 0.0, 0.0, 0.0]
+  },
 }

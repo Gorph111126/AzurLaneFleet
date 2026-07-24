@@ -1,3 +1,6 @@
+//cd is the "reload_max" in the weapon_properties json
+//ship_type_forbidden is in equip_data_template
+
 const equip_data = {
   46380: {
     nationality: 4,
