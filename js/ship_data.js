@@ -1,4 +1,35 @@
 const ship_data = {
+  //TEMPLATE
+  // 9600020: {
+  //   nationality: 96, IN MAIN-V2.JS LINE 320
+  //   type: 24, IN MAIN-V2.JS 350
+  //   base_list: [6, 2, 2],
+  //   id: 9600024,
+  //   skin_id: 9600020,
+  //   english_name: 'MOT São Martinho',
+  //   star: 6,
+  //   rarity: 5, 
+  //   retro: 0,
+  //   uni_id: '9600020',
+  //   painting: '9600020',
+
+  //   jp_name: 'サン・マルチーニョ',
+  //   en_name: 'São Martinho',
+  //   cn_name: '圣马丁号',
+  //   tw_name: 'São Martinho',
+  //EQIPS IN MAIN LINE 270
+  //   equip_1: [4],
+  //   equip_2: [1],
+  //   equip_3: [1],
+  //   equip_4: [10],
+  //   equip_5: [10],
+
+  //   eq_p: [1.1, 1.75, 1.75], gives the percentage efficency NEEDS TO BE FOUND ON THE WIKI
+  //   reload: [62.0, 429.0, 0.0, 46.0, 0.0]  BRO IDK WTF THIS IS AT ALL FIRST NUMBER IS THE BASE RELOAD STAT
+  //   THIS IS WHAT THE THINGS ARE reload: [base, grow, extra, strengthen, retrofit],
+  //BASE IS WHAT IS ON THE WIKI, 
+  // },
+ 
   10800090: {
     nationality: 108,
     type: 19,
@@ -18749,6 +18780,8 @@ const ship_data = {
     reload: [69, 482, 0, 52, 0],
     date: '2019年03月22日'
   },
+
+  //SECOND AUTHOR STARTS HERE
   9600020: {
     nationality: 96,
     type: 24,
@@ -18770,8 +18803,8 @@ const ship_data = {
     equip_3: [1],
     equip_4: [10],
     equip_5: [10],
-    eq_p: [1.1, 1.75, 1.75],
-    reload: [62.0, 429.0, 0.0, 46.0, 0.0]
+    eq_p: [1.1, 1.75, 1.75],//gives the percentage efficency
+    reload: [62.0, 999999999.9, 0.0, 46.0, 0.0] //reload: [62.0, 429.0, 0.0, 46.0, 0.0]
   },
   9600050: {
     nationality: 96,
