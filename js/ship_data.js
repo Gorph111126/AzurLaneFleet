@@ -28,7 +28,13 @@ const ship_data = {
   //   reload: [62.0, 429.0, 0.0, 46.0, 0.0]  BRO IDK WTF THIS IS AT ALL FIRST NUMBER IS THE BASE RELOAD STAT
   //   THIS IS WHAT THE THINGS ARE reload: [base, grow, extra, strengthen, retrofit],
   //BASE IS WHAT IS ON THE WIKI, 
-  // },
+//   // },
+//   grow -> main stat scaling
+// extra -> late-game scaling (100+)
+// strengthen -> enhancement (feeding ships)
+// retrofit -> flat upgrade from retrofit tree
+// https://raw.githubusercontent.com/AzurLaneTools/AzurLaneData/refs/heads/main/EN/sharecfgdata/ship_data_statistics.json
+// use the array index 5 for reload stats
  
   10800090: {
     nationality: 108,
