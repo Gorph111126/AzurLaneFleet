@@ -54,7 +54,7 @@ for (const ship of Object.values(highestships)){
         equip_4: otherData.equip_4,
         equip_5: otherData.equip_5,
         eq_p: ship.equipment_proficiency,
-        reload: [ship.attrs[5],ship.attrs_growth[5],ship.attrs_growth_extra[5],enhance]
+        reload: [ship.attrs[5],ship.attrs_growth[5],ship.attrs_growth_extra[5],enhance,retrofitbonus]
     };
     
 }

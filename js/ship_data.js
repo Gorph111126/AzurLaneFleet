@@ -29,11 +29,11 @@ const ship_data = {
   //   eq_p: [1.1, 1.75, 1.75], gives the percentage efficency NEEDS TO BE FOUND ON THE WIKI
   //   reload: [62.0, 429.0, 0.0, 46.0, 0.0]  BRO IDK WTF THIS IS AT ALL FIRST NUMBER IS THE BASE RELOAD STAT
   //   THIS IS WHAT THE THINGS ARE reload: [base, grow, extra, strengthen, retrofit],
-  //BASE IS WHAT IS ON THE WIKI, 
+  //BASE IS WHAT IS ON THE WIKI, attrs 
 //   // },
-//   grow -> main stat scaling
-// extra -> late-game scaling (100+)
-// strengthen -> enhancement (feeding ships)
+//   grow -> main stat scaling attrs_growth
+// extra -> late-game scaling (100+)  attrs_growth_extra
+// strengthen -> enhancement (feeding ships) ship_data_strengthen.json under "durability " number 4
 // retrofit -> flat upgrade from retrofit tree
 // https://raw.githubusercontent.com/AzurLaneTools/AzurLaneData/refs/heads/main/EN/sharecfgdata/ship_data_statistics.json
 // use the array index 5 for reload stats
@@ -23318,7 +23318,7 @@ const ship_data = {
     reload: [82.0, 574.0, 0.0, 62.0, 0.0]
   },
 
-  //My ships start here
+  //My ships start
   404064: {
     nationality: 4,
     type: 4,
@@ -23341,6 +23341,6 @@ const ship_data = {
     equip_4: [10],
     equip_5: [10],
     eq_p: [1.4, 2.0, 1.0],
-    reload: [61.0, 426.0, 0.0, 0.0, 0.0]
+    reload: [61.0, 426.0, 0.0, 46.0, 0.0]
   },
 }
