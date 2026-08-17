@@ -5,17 +5,18 @@ const strengthen = require('F:\\Users\\Downloads\\ship_data_strengthen.json');
 const newships = ["Z47","U-31","Z43","Strasbourg"];
 const highestships ={};
 
-for (const ship of Object.values(stats)){
-    //is it a ship I want
+for (const ship of Object.values(stats)) {
     if (newships.includes(ship.name)) {
-        //have we seen it before
-        if (!highestships[ship.name] || ship.rarity > highestships[ship.name].star){
+        const current = highestships[ship.name];
+
+        if (!current || ship.star > current.star) {
             highestships[ship.name] = ship;
         }
-            
     }
-    
 }
+
+
+
 
 const output = {}; 
 for (const ship of Object.values(highestships)){
@@ -23,7 +24,13 @@ for (const ship of Object.values(highestships)){
     if(ship.retro == null){
         ship.retro = 0;
     }
-    otherData = template[ship.id]
+    if(strengthen[strid]){
+        enhance = strengthen[strid].durability[4]; 
+    }
+    else{
+        enhance = 0;
+    }
+    const otherData = template[ship.id]
     output[ship.id] = {
         nationality: ship.nationality,
         type: ship.type,
@@ -47,15 +54,9 @@ for (const ship of Object.values(highestships)){
         equip_4: otherData.equip_4,
         equip_5: otherData.equip_5,
         eq_p: ship.equipment_proficiency,
-        reload: [ship.attrs[5],ship.attrs_growth[5],ship.attrs_growth_extra[5], strengthen[strid].durability[4]]
+        reload: [ship.attrs[5],ship.attrs_growth[5],ship.attrs_growth_extra[5],enhance]
     };
-    console.log(output)
+    
 }
-
+console.log(output);
 console.log("done")
-
-
-
-// let stats = shipstats["404061"]
-// strengthid = stats.strengthen_id;
-// console.log(stats.strengthen_id)
