@@ -2,7 +2,12 @@ const stats = require('F:\\Users\\Downloads\\ship_data_statistics.json');
 const template = require('F:\\Users\\Downloads\\ship_data_template.json');
 const strengthen = require('F:\\Users\\Downloads\\ship_data_strengthen.json');
 
-const newships = ["U-31", "John Rodgers", "Bennington", "Vicksburg", "Harrison", "Collett", "Griffin", "Surrey", "Superb", "L'Intrépide", "Arromanches", "Cherbourg", "Unzen-chan", "Z15", "Z14", "Prinz Moritz", "U-2501", "Götz von Berlichingen", "Musashi-chan", "Nayoro", "Kizu", "Unryuu", "Bogatyr", "Krasny Kavkaz", "Ozornoy", "Moskva", "Hai Chou", "Chang Wu"];
+const newships = ["U-31", "John Rodgers", "Bennington", "Vicksburg", "Harrison", "Collett", "Griffin",
+    "Surrey", "Superb", "L'Intrépide", "Arromanches", "Cherbourg", "Unzen-chan", "Z15", "Z14", "Prinz Moritz",
+    "U-2501", "Götz von Berlichingen", "Musashi-chan", "Nayoro", "Kizu", "Unryuu", "Bogatyr", "Krasny Kavkaz",
+    "Ozornoy", "Moskva", "Hai Chou", "Chang Wu", "Carabiniere META", "Gangut META", "Regensburg META",
+    "Köln META", "Königsberg META", "Elbe META", "Bristol META", "Nürnberg META", "A2", "B2", "Elise",
+    "Shizuku", "Shandy", "Tsukushi", "Patty", "Yukino", "Ying Swei (Retrofit)", "Chao H (Retrofit)o", "Chen Hai (Retrofit)", "Hwah Jah (Retrofit)"];
 const highestships = {};
 
 for (const ship of Object.values(stats)) {

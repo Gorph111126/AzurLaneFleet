@@ -23523,7 +23523,7 @@ const ship_data = {
   //   rarity: 4,
   //   retro: 0,
   //   uni_id: '103294',
-  //   painting: '103294',
+  //   painting: '103294',  
   //   jp_name: 'undef',
   //   en_name: 'USS Anchorage',
   //   cn_name: 'undef',
