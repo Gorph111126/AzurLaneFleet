@@ -45,7 +45,7 @@ for (const ship of Object.values(highestships)) {
         //data statistics ends here, now use data template
 
         uni_id: ship.id,
-        painting: ship.id,
+        painting: ship.skin_id,
         jp_name: ship.jp_name,
         en_name: ship.english_name,
         cn_name: ship.cn_name,
