@@ -37,7 +37,7 @@ for (const ship of Object.values(highestships)) {
         enhance = 0;
     }
     const otherData = template[ship.id]
-    output[ship.skin_id] = {
+    output[ship.id] = {
         nationality: ship.nationality,
         type: ship.type,
         base_list: ship.base_list,
@@ -49,12 +49,12 @@ for (const ship of Object.values(highestships)) {
         retro: ship.retro,
         //data statistics ends here, now use data template
 
-        uni_id: ship.id,
-        painting: ship.skin_id,
-        jp_name: ship.jp_name,
-        en_name: ship.english_name,
-        cn_name: ship.cn_name,
-        tw_name: ship.name,
+        uni_id: `${ship.id}`,
+        painting: `${ship.skin_id}`,
+        jp_name: `${ship.jp_name}`,
+        en_name: `${ship.english_name}`,
+        cn_name: `${ship.cn_name}`,
+        tw_name: `${ship.name}`,
         equip_1: otherData.equip_1,
         equip_2: otherData.equip_2,
         equip_3: otherData.equip_3,
